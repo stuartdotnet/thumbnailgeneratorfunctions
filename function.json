@@ -1,0 +1,15 @@
+{
+	"generatedBy": "Microsoft.NET.Sdk.Functions-1.0.24",
+	"configurationSource": "attributes",
+	"bindings": [
+		{
+			"type": "blobTrigger",
+			"connection": "AzureWebJobStorage",
+			"path": "galleryupload/{name}",
+			"name": "blob"
+		}
+	],
+	"disabled": false,
+	"scriptFile": "../bin/ThumbnailGenerator.dll",
+	"entryPoint": "ThumbnailGenerator.GenerateThumbnails.Run"
+}
